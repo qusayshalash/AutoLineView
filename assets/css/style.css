@@ -7145,7 +7145,7 @@ hr {
 .logo-bg:after {
   content: "";
   position: absolute;
-  left: auto;
+  right: 1327px;
   top: 0;
   border-top: 88px solid transparent;
   border-bottom: 0 solid transparent;
