@@ -237,3 +237,7 @@ $('.video-popup').fancybox();
 
 
 })(jQuery);
+
+
+const startDate = 1998
+document.getElementById("YOS").innerHTML = (new Date()).getFullYear() - startDate;
