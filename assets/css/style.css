@@ -1357,6 +1357,16 @@ hr {
   z-index: 2;
   position: relative;
 }
+
+.swiper-slide .slider-content-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+  position: inherit;
+  margin-bottom: -184px;
+  top: 299px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .slingle-slider .slider-content-wrapper {
     align-items: flex-start;
