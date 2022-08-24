@@ -7163,3 +7163,9 @@ hr {
   z-index: 10;
   height: 100%;
 }
+
+.fixed-contact-image {
+  margin-left: -220px;
+  margin-top: 10px;
+  transform: scale(1.3);
+}
