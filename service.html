@@ -25,115 +25,82 @@
 
 <body>
 
-    <header class="header-wrapper sticky-header">
-        <div class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="flex-center justify-content-between">
-                            <!-- Header Logo Start -->
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo.png" alt="">
-                                </a>
-                            </div>
-                            <!-- Header Logo End -->
-
-                            <div class="flex-center header-right">
-                                <!-- Header Menu Start -->
-                                <div class="d-none d-lg-flex header-right_menu">
-                                    <nav class="main-menu">
-                                        <ul>
-                                            <li class="has-children">
-                                                <a href="#">Home</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">Home One</a></li>
-                                                    <li><a href="index-2.html">Home Two</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li class="has-children">
-                                                <a href="#">Service</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="service.html">Service</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <!-- Header Menu End -->
-                            </div>
-                        </div>
+    <div class="topbar-area topbar-area-2 fix hidden-xs service-background-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-9">
+                    <div class="topbar-left">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fas fa-map-marker-alt"></i> House-4,2/3
+                                    avenew,Dubai</a>
+                            </li>
+                            <li class="li-hidden">
+                                <a href="#"><i class="far fa-clock"></i> Mon - Fri: 10:00 - 18:00</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@tionscall3.com"><i
+                                        class="fas fa-envelope"></i>info@tionscall3.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:+2112-6546654"><i class="fas fa-phone"></i> +2112-6546654</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="quote-button">
+                        <a href="contact.html" class="quote-btn" title="Quick view" data-toggle="modal"
+                            data-target="#quoteModal">Get a quote</a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <div class="offcanvas offcanvas-end" id="offcanvas-header">
-
-        <div class="offcanvas-header">
-            <!-- Header Logo Start -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="">
-                </a>
-            </div>
-            <!-- Header Logo End -->
-            <button type="button" class="btn-close text-reset mobilemenu-close" data-bs-dismiss="offcanvas"
-                aria-label="Close"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="offcanvas-body">
-            <!-- mobile menu navigation start -->
-            <nav>
-                <ul class="mobile-menu">
-                    <li class="menu-item-has-children">
-                        <a href="#">HOME</a>
-                        <ul class="dropdown">
-                            <li><a href="index.html">Home One </a></li>
-                            <li><a href="index-2.html">Home Two</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li class="menu-item-has-children">
-                        <a href="#">SERVICE</a>
-                        <ul class="dropdown">
-                            <li><a href="service.html">Service</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">PORTFOLIO</a>
-                        <ul class="dropdown">
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">TEAM</a>
-                        <ul class="dropdown">
-                            <li><a href="team-members.html">Team Members</a></li>
-                            <li><a href="member-details.html">Member Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children ">
-                        <a href="#">BLOG</a>
-                        <ul class="dropdown">
-                            <li><a href="blog.html">Blog Standard</a></li>
-                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">CONTACT US </a></li>
-                </ul>
-            </nav>
-            <!-- mobile menu navigation end -->
-        </div>
-
     </div>
+
+    <nav class="navbar navbar-expand-lg sticky-md-top py-0" style="background-color: white;">
+        <div
+            class="container d-flex justify-content-md-center justify-content-lg-between flex-lg-row gap-md-3 gap-lg-0 flex-sm-wrap flex-md-nowrap">
+            <a href="index.html" class="img-1 position-relative">
+                <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler d-sm-block d-md-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 flex-md-row gap-md-2 gap-lg-5">
+                    <li class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center">
+                        <a class="nav-link px-md-2 text-md-center service-text-nav-bar-color" aria-current="page"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center">
+                        <a class="nav-link px-md-2 text-md-center service-text-nav-bar-color" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center">
+                        <a class="nav-link px-md-2 text-md-center service-text-nav-bar-color" href="#">
+                            Service
+                        </a>
+                    </li>
+                    <li
+                        class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center has-children">
+                        <a class="nav-link px-md-2 text-md-center service-text-nav-bar-color" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center">
+                        <a class="nav-link px-md-2 text-md-center service-text-nav-bar-color" aria-current="page"
+                            href="contact.html">Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Breadcrumb Section Start -->
     <div class="section breadcrumb-section">
@@ -183,16 +150,18 @@
                 </div>
                 <!-- Portfolio Isotop Button End -->
                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n25 grid parent-gallery">
-                    <div class="col mb-25 grid-item cat2 cat4 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
+                    <div class="col mb-25 grid-item cat1 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
                         <!-- Single Portfolio Start -->
                         <div class="single-portfolio">
                             <a class="thumbnail" href="portfolio-details.html">
-                                <img src="assets/images/service/airFilter.jpg" width="424px" height="346px" alt="Blog Image">
+                                <img src="assets/images/service/airFilter.jpg" width="424px" height="346px"
+                                    alt="Blog Image">
                             </a>
                             <div class="content">
                                 <span class="subtitle">Air Filter</span>
                                 <h3 class="title">
-                                    <a href="portfolio-details.html"> Essential in maintaining your car's performance</a>
+                                    <a href="portfolio-details.html"> Essential in maintaining your car's
+                                        performance</a>
                                 </h3>
                             </div>
                             <div class="lightbox">
@@ -202,20 +171,43 @@
                         </div>
                         <!-- Single Portfolio End -->
                     </div>
-                    <div class="col mb-25 grid-item cat1 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
+                    <div class="col mb-25 grid-item cat3 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
                         <!-- Single Portfolio Start -->
                         <div class="single-portfolio">
                             <a class="thumbnail" href="portfolio-details.html">
-                                <img src="assets/images/service/diselFilter2.png" width="424px" height="560px" alt="Blog Image">
+                                <img src="assets/images/service/diselFilter2.png" width="424px" height="560px"
+                                    alt="Blog Image">
                             </a>
                             <div class="content">
                                 <span class="subtitle">Diesel Filter</span>
                                 <h3 class="title">
-                                    <a href="portfolio-details.html">The fuel filter's job is to filter dirt and to prevent impurities in the tank</a>
+                                    <a href="portfolio-details.html">The fuel filter's job is to filter dirt and to
+                                        prevent impurities in the tank</a>
                                 </h3>
                             </div>
                             <div class="lightbox">
-                                <a class="item" href="assets/images/portfolio/portfolio-2.png"><i
+                                <a class="item" href="assets/images/service/diselFilter2.png"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <!-- Single Portfolio End -->
+                    </div>
+                    <div class="col mb-25 grid-item cat2 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
+                        <!-- Single Portfolio Start -->
+                        <div class="single-portfolio">
+                            <a class="thumbnail" href="portfolio-details.html">
+                                <img src="assets/images/service/oilFilter.jpg" width="424px" height="346px"
+                                    alt="Blog Image">
+                            </a>
+                            <div class="content">
+                                <span class="subtitle">Oil Filter</span>
+                                <h3 class="title">
+                                    <a href="portfolio-details.html">The oil filter helps remove contaminants from your
+                                        car engine's oil</a>
+                                </h3>
+                            </div>
+                            <div class="lightbox">
+                                <a class="item" href="assets/images/service/oilFilter.jpg"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -225,26 +217,8 @@
                         <!-- Single Portfolio Start -->
                         <div class="single-portfolio">
                             <a class="thumbnail" href="portfolio-details.html">
-                                <img src="assets/images/service/oilFilter.jpg" width="424px" height="346px" alt="Blog Image">
-                            </a>
-                            <div class="content">
-                                <span class="subtitle">Oil Filter</span>
-                                <h3 class="title">
-                                    <a href="portfolio-details.html">The oil filter helps remove contaminants from your car engine's oil</a>
-                                </h3>
-                            </div>
-                            <div class="lightbox">
-                                <a class="item" href="assets/images/portfolio/portfolio-3.png"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Single Portfolio End -->
-                    </div>
-                    <div class="col mb-25 grid-item cat3 cat1 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                        <!-- Single Portfolio Start -->
-                        <div class="single-portfolio">
-                            <a class="thumbnail" href="portfolio-details.html">
-                                <img src="assets/images/service/itemOne.jpeg" width="424px" height="560px" alt="Blog Image">
+                                <img src="assets/images/service/itemOne.jpeg" width="424px" height="560px"
+                                    alt="Blog Image">
                             </a>
                             <div class="content">
                                 <span class="subtitle">Oil</span>
@@ -253,7 +227,7 @@
                                 </h3>
                             </div>
                             <div class="lightbox">
-                                <a class="item" href="assets/images/portfolio/portfolio-4.png"><i
+                                <a class="item" href="assets/images/service/itemOne.jpeg"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -263,35 +237,39 @@
                         <!-- Single Portfolio Start -->
                         <div class="single-portfolio">
                             <a class="thumbnail" href="portfolio-details.html">
-                                <img src="assets/images/service/itemTwo.jpg" width="424px" height="560px" alt="Blog Image">
+                                <img src="assets/images/service/itemTwo.jpg" width="424px" height="560px"
+                                    alt="Blog Image">
                             </a>
                             <div class="content">
                                 <span class="subtitle">car wiper</span>
                                 <h3 class="title">
-                                    <a href="portfolio-details.html">Winter is coming let's choose the perfect wiper for you</a>
+                                    <a href="portfolio-details.html">Winter is coming let's choose the perfect wiper for
+                                        you</a>
                                 </h3>
                             </div>
                             <div class="lightbox">
-                                <a class="item" href="assets/images/portfolio/portfolio-6.png"><i
+                                <a class="item" href="assets/images/service/itemTwo.jpg"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <!-- Single Portfolio End -->
                     </div>
-                    <div class="col mb-25 grid-item cat1 cat3 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
+                    <div class="col mb-25 grid-item cat4 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
                         <!-- Single Portfolio Start -->
                         <div class="single-portfolio">
                             <a class="thumbnail" href="portfolio-details.html">
-                                <img src="assets/images/service/itemThree.jpg" width="424px" height="346px"alt="Blog Image">
+                                <img src="assets/images/service/itemThree.jpg" width="424px" height="346px"
+                                    alt="Blog Image">
                             </a>
                             <div class="content">
                                 <span class="subtitle">car wiper water</span>
                                 <h3 class="title">
-                                    <a href="portfolio-details.html">It is highly recommended that you refill your washer fluid reservoir with washer fluid, Nothing else :)</a>
+                                    <a href="portfolio-details.html">It is highly recommended that you refill your
+                                        washer fluid reservoir with washer fluid, Nothing else :)</a>
                                 </h3>
                             </div>
                             <div class="lightbox">
-                                <a class="item" href="assets/images/portfolio/portfolio-5.png"><i
+                                <a class="item" href="assets/images/service/itemThree.jpg"><i
                                         class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
