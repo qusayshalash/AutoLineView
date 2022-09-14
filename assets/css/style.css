@@ -959,6 +959,7 @@ nav.navbar .navbar-collapse ul li {
     width: 0;
     border-top: 3px solid transparent;
     transition: 0.8s;
+    z-index: -1;
   }
 
   nav.navbar .navbar-collapse ul li {
@@ -8381,7 +8382,7 @@ nav.navbar .navbar-collapse ul li a {
 @media (max-width: 767px) {
   .carousel {
     margin-top: 0;
-    height: 33vh;
+    height: 35vh;
   }
 }
 
@@ -8407,9 +8408,6 @@ nav.navbar .navbar-collapse ul li a {
   overflow: hidden;
 }
 
-/* .carousel .carousel-inner .carousel-item {
-  max-height: 100%;
-} */
 .carousel .carousel-inner .carousel-item img {
   animation: zoomin 10s ease-in-out infinite alternate;
 }
@@ -8423,6 +8421,13 @@ nav.navbar .navbar-collapse ul li a {
   }
 }
 
+@media (max-width: 767px) {
+  .carousel .carousel-inner .carousel-item img {
+    height: 320px;
+    object-fit: cover;
+  }
+}
+
 .carousel .carousel-inner .carousel-caption {
   top: 50%;
   transform: translateY(-50%) !important;
@@ -8431,7 +8436,17 @@ nav.navbar .navbar-collapse ul li a {
 
 @media (max-width: 767px) {
   .carousel .carousel-inner .carousel-caption {
-    transform: translateY(-100%) !important;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    /* transform: translateY(-100%) !important; */
+  }
+}
+
+@media (max-width: 540px) {
+  .carousel .carousel-inner .carousel-caption {
+    justify-content: flex-start;
   }
 }
 
@@ -8453,7 +8468,7 @@ nav.navbar .navbar-collapse ul li a {
 
 @media (max-width: 767px) {
   .carousel .carousel-inner .carousel-caption h1 {
-    margin: 10px auto;
+    margin: 0;
     font-size: 23px;
     padding: 0;
   }
@@ -8476,7 +8491,7 @@ nav.navbar .navbar-collapse ul li a {
 
 @media (max-width: 767px) {
   .carousel .carousel-inner .carousel-caption p {
-    margin: 0 auto 25px;
+    margin: 15px auto;
     font-size: 16px;
   }
 }
@@ -8498,6 +8513,21 @@ nav.navbar .navbar-collapse ul li a {
   z-index: 222;
   border-radius: 2px;
   margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .carousel .carousel-inner .carousel-caption .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .carousel .carousel-inner .carousel-caption .buttons a {
+    white-space: nowrap;
+    width: fit-content;
+    margin: 0 5px;
+    padding: 5px 20px;
+  }
 }
 
 .carousel .carousel-inner .carousel-caption .buttons a:nth-child(1) {
@@ -8582,6 +8612,12 @@ nav.navbar .navbar-collapse ul li a {
 .carousel .carousel-control-next .carousel-control-next-icon:hover {
   background-color: var(--main-color);
   border-color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
 }
 
 /* end carousel */
