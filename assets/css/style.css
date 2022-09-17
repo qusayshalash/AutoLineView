@@ -867,6 +867,7 @@ nav.navbar {
 
 nav.navbar.black {
   background-color: black;
+  border: 0 !important;
 }
 
 @media (max-width: 767px) {
