@@ -859,6 +859,12 @@ nav.navbar {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.nav-shadow {
+  border-top: 1px solid #020e29 !important;
+  background-color: white !important;
+  box-shadow: 2px 2px 5px #ccc, 0px 0px 0px #ccc;
+}
+
 nav.navbar.black {
   background-color: black;
 }
@@ -906,7 +912,7 @@ nav.navbar .img-1::after {
 
 nav.navbar .img-1 {
   background: var(--main-color);
-  padding: 20px 0;
+  padding: 21px 0;
 }
 
 @media (max-width: 767px) {
