@@ -847,7 +847,16 @@ hr {
   transition: 0.3s;
 }
 
+.scroll-top:hover svg {
+  color: White;
+  transition: 0.3s;
+}
+
 .scroll-top:hover .arrow-top {
+  transform: translate(-50%, -80px);
+}
+
+.scroll-top:hover svg.arrow-top {
   transform: translate(-50%, -80px);
 }
 
@@ -855,7 +864,19 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+.scroll-top:hover svg.arrow-bottom {
+  transform: translate(-50%, -50%);
+}
+
 .scroll-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.scroll-top svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -878,7 +899,14 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+.scroll-top svg.arrow-top {
+  transform: translate(-50%, -50%);
+}
+
 .scroll-top .arrow-bottom {
+  transform: translate(-50%, 80px);
+}
+.scroll-top svg.arrow-bottom {
   transform: translate(-50%, 80px);
 }
 
@@ -950,6 +978,12 @@ nav.navbar .navbar-toggler:focus {
   box-shadow: none !important;
 }
 
+nav.navbar .img-1 h1 {
+  color: white;
+  white-space: nowrap;
+  font-weight: 900;
+}
+
 nav.navbar .img-1::before {
   content: "";
   position: absolute;
@@ -965,7 +999,7 @@ nav.navbar .img-1::after {
   position: absolute;
   right: -100px;
   top: 0;
-  border-top: 88px solid transparent;
+  border-top: 100px solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 100px solid var(--main-color);
   height: 100%;
@@ -973,13 +1007,13 @@ nav.navbar .img-1::after {
 
 @media (min-width: 768px) and (max-width: 991px) {
   nav.navbar .img-1::after {
-    border-top: 95px solid transparent;
+    border-top: 93px solid transparent;
   }
 }
 
 nav.navbar .img-1 {
   background: var(--main-color);
-  padding: 21px 0;
+  padding: 27px 0;
 }
 
 @media (max-width: 991px) {
@@ -1012,7 +1046,7 @@ nav.navbar .img-1 {
 
 nav.navbar .navbar-collapse ul li {
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 @media (max-width: 767px) {
@@ -1029,7 +1063,7 @@ nav.navbar .navbar-collapse ul li {
   }
 
   nav.navbar .navbar-collapse ul li a:hover {
-    background-color: #fe5e15c4;
+    background-color: var(--main-color);
     color: white !important;
   }
 }
@@ -1061,6 +1095,16 @@ nav.navbar .navbar-collapse ul li {
     height: 100%;
     width: 100%;
   }
+}
+
+@media (min-width: 992px) {
+  nav.navbar .navbar-collapse ul li::before {
+    top: -4px;
+  }
+}
+
+nav.navbar .navbar-collapse ul li a.active {
+  color: var(--main-color) !important;
 }
 
 nav.navbar .navbar-collapse ul li a {
@@ -8064,6 +8108,11 @@ nav.navbar .navbar-collapse ul li a {
   z-index: 1;
 }
 
+.footer-widget .logo h1 {
+  color: black;
+  font-weight: 900;
+}
+
 .footer-widget.negative-margin {
   margin-top: -30px;
 }
@@ -8567,6 +8616,10 @@ nav.navbar .navbar-collapse ul li a {
 .carousel .carousel-inner {
   max-height: 100%;
   overflow: hidden;
+}
+
+.carousel.about .carousel-inner .carousel-item img {
+  animation: none;
 }
 
 .carousel .carousel-inner .carousel-item img {

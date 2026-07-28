@@ -162,3 +162,19 @@ window.onscroll = function () {
     navbar.classList.remove("black");
   }
 };
+
+//==============================================
+
+// make tab active when click on it in header
+
+let Links = document.querySelectorAll(".navbar-nav li a");
+let activePage = window.location.pathname;
+
+Links.forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active");
+  }
+});
+
+// ele.classList.remove("active");
+// e.target.classList.add("active");
