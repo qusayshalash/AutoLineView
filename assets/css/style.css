@@ -1031,6 +1031,10 @@ nav.navbar .img-1 {
   nav.navbar .img-1 {
     background: none;
   }
+
+  nav.navbar .img-1 h1 {
+    color: var(--main-color);
+  }
 }
 
 /* .header-wrapper {
