@@ -2607,6 +2607,9 @@ nav.navbar .navbar-collapse ul li a {
 .about .main-image .about-img {
   z-index: 1;
   position: relative;
+  width: 100%;
+  max-width: 536px;
+  height: auto;
 }
 
 .about .main-image .about-icon {

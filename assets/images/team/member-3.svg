@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 379" width="312" height="379">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#29b6f6"/><stop offset="1" stop-color="#01579b"/></linearGradient></defs>
+  <rect width="312" height="379" fill="url(#bg)"/>
+  <circle cx="262" cy="56" r="70" fill="#fff" opacity=".12"/>
+  <circle cx="30" cy="330" r="90" fill="#fff" opacity=".08"/>
+  <path d="M134 230h44v44c-6 10-38 10-44 0z" fill="#ac7a56"/>
+  <path d="M38 379c2-66 42-112 118-112s116 46 118 112z" fill="#263238"/><path d="M126 268l30 30 30-30-8-4-22 18-22-18z" fill="#29b6f6"/><path d="M156 298v30" stroke="#1c252a" stroke-width="3"/><circle cx="156" cy="308" r="3" fill="#fff"/><circle cx="156" cy="322" r="3" fill="#fff"/>
+  <g transform="translate(0,26)">
+    <ellipse cx="106" cy="154" rx="9" ry="13" fill="#ac7a56"/><ellipse cx="206" cy="154" rx="9" ry="13" fill="#ac7a56"/>
+    <path d="M106 146c0-40 22-64 50-64s50 24 50 64c0 46-22 78-50 78s-50-32-50-78z" fill="#c48b62"/>
+    <path d="M107 140c0-38 22-58 49-58s49 20 49 58c-6-18-16-28-26-32-14 4-32 4-46 0-10 4-20 14-26 32z" fill="#1c1c1c" opacity=".92"/>
+    <path d="M108 158c2 36 20 64 48 64s46-28 48-64c-3 0-6 2-7 5-3 16-10 24-20 26-6-6-13-8-21-8s-15 2-21 8c-10-2-17-10-20-26-1-3-4-5-7-5z" fill="#1c1c1c"/><path d="M140 183c5-5 10-6 16-5 6-1 11 0 16 5-5 2-11 2-16 0-5 2-11 2-16 0z" fill="#1c1c1c"/>
+    <path d="M126 136q11-6 22-1M164 135q11-5 22 1" stroke="#1c1c1c" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="137" cy="152" rx="5" ry="5.5" fill="#2a2a2a"/><ellipse cx="175" cy="152" rx="5" ry="5.5" fill="#2a2a2a"/>
+    <circle cx="139" cy="150" r="1.6" fill="#fff"/><circle cx="177" cy="150" r="1.6" fill="#fff"/>
+    <path d="M156 156c-2 8-4 14-4 18 2 2 6 2 9 0" stroke="#896144" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M145 192q11 8 22 0" stroke="#fff" stroke-width="0" fill="none"/>
+    <path d="M144 190q12 9 24 0q-12 4-24 0z" fill="#8a3b33" stroke="#8a3b33" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+</svg>
