@@ -814,105 +814,100 @@ hr {
 /* Scroll Top style */
 .scroll-top {
   position: fixed;
-  right: 30px;
-  bottom: -60px;
+  right: 28px;
+  bottom: -70px;
   z-index: 999;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
   display: block;
+  width: 50px;
+  height: 50px;
   padding: 0;
-  width: 40px;
-  height: 40px;
-  text-align: center;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--main-color) 0%, #0277bd 100%);
+  box-shadow: 0 10px 24px rgba(3, 169, 244, 0.35),
+    0 2px 6px rgba(0, 0, 0, 0.12);
   font-size: 18px;
-  line-height: 40px;
+  line-height: 50px;
+  text-align: center;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  background-color: var(--second-color);
-  background-size: 200% auto;
-  background-position: left center;
-  transition: 0.3s;
   overflow: hidden;
-  border: 1px solid var(--fourth-color);
+  transition: bottom 0.35s ease, opacity 0.35s ease, transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.scroll-top::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  pointer-events: none;
 }
 
 .scroll-top:hover {
-  background-color: var(--fourth-color);
-  border: 1px solid var(--second-color);
-  background-position: right center;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(3, 169, 244, 0.45),
+    0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.scroll-top:hover i {
-  color: White;
-  transition: 0.3s;
+.scroll-top:focus-visible {
+  outline: 3px solid rgba(3, 169, 244, 0.45);
+  outline-offset: 3px;
 }
 
-.scroll-top:hover svg {
-  color: White;
-  transition: 0.3s;
-}
-
-.scroll-top:hover .arrow-top {
-  transform: translate(-50%, -80px);
-}
-
-.scroll-top:hover svg.arrow-top {
-  transform: translate(-50%, -80px);
-}
-
-.scroll-top:hover .arrow-bottom {
-  transform: translate(-50%, -50%);
-}
-
-.scroll-top:hover svg.arrow-bottom {
-  transform: translate(-50%, -50%);
-}
-
-.scroll-top i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #ffffff;
-  transition: 0.3s;
-}
-
+.scroll-top i,
 .scroll-top svg {
   position: absolute;
   top: 50%;
   left: 50%;
   color: #ffffff;
-  transition: 0.3s;
+  transition: transform 0.35s ease;
+}
+
+.scroll-top .arrow-top,
+.scroll-top svg.arrow-top {
+  transform: translate(-50%, -50%);
+}
+
+.scroll-top .arrow-bottom,
+.scroll-top svg.arrow-bottom {
+  transform: translate(-50%, 60px);
+}
+
+.scroll-top:hover .arrow-top,
+.scroll-top:hover svg.arrow-top {
+  transform: translate(-50%, -60px);
+}
+
+.scroll-top:hover .arrow-bottom,
+.scroll-top:hover svg.arrow-bottom {
+  transform: translate(-50%, -50%);
 }
 
 .scroll-top.show {
   display: none;
   visibility: visible;
   opacity: 1;
-  bottom: 60px;
+  bottom: 40px;
 }
 
 .scroll-top.show.show-active {
   display: block;
 }
 
-.scroll-top .arrow-top {
-  transform: translate(-50%, -50%);
-}
-
-.scroll-top svg.arrow-top {
-  transform: translate(-50%, -50%);
-}
-
-.scroll-top .arrow-bottom {
-  transform: translate(-50%, 80px);
-}
-.scroll-top svg.arrow-bottom {
-  transform: translate(-50%, 80px);
-}
-
 @media only screen and (max-width: 479px) {
   .scroll-top {
-    font-size: 20px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+  }
+
+  .scroll-top.show {
+    bottom: 24px;
   }
 }
 
@@ -8970,4 +8965,56 @@ nav.navbar .navbar-collapse ul li a {
 
 .service-text-nav-bar-color {
   color: black;
+}
+
+/* Footer social icons */
+.footer-widget .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-widget .footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--main-color);
+  font-size: 19px;
+  box-shadow: 0 6px 16px rgba(1, 87, 155, 0.1);
+  transition: transform 0.25s ease, background-color 0.25s ease,
+    color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-widget .footer-social a:hover,
+.footer-widget .footer-social a:focus-visible {
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(1, 87, 155, 0.22);
+}
+
+.footer-widget .footer-social a.facebook:hover,
+.footer-widget .footer-social a.facebook:focus-visible {
+  background: #1877f2;
+}
+
+.footer-widget .footer-social a.instagram:hover,
+.footer-widget .footer-social a.instagram:focus-visible {
+  background: linear-gradient(45deg, #f9a825, #e1306c 50%, #833ab4);
+}
+
+.footer-widget .footer-social a.whatsapp:hover,
+.footer-widget .footer-social a.whatsapp:focus-visible {
+  background: #25d366;
+}
+
+.footer-widget .footer-social a.linkedin:hover,
+.footer-widget .footer-social a.linkedin:focus-visible {
+  background: #0a66c2;
 }
