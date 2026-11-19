@@ -2870,6 +2870,14 @@ nav.navbar .navbar-collapse ul li a {
   position: relative;
 }
 
+.divider-thumb .video-content-wrap .icon-img {
+  width: 100%;
+  max-width: 537px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(1, 87, 155, 0.15);
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .divider-thumb .video-content-wrap .icon-img {
     width: 100%;
